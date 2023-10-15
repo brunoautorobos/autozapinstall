@@ -7,7 +7,7 @@ sudo apt -y update && apt -y upgrade
 ```
 
 ```bash
-sudo apt install -y git && git clone git@github.com:wesleybgm01/autozap6.0install.git install && sudo chmod -R 777 ./install && cd ./install && sudo ./install_primaria
+sudo apt install -y git && git clone https://github.com/wesleybgm01/autozap6.0install.git autozap6.0install && sudo chmod -R 777 autozap6.0install  && cd autozap6.0install  && sudo ./install_primaria
 ```
 
 ACESSANDO DIRETORIO DO INSTALADOR & INICIANDO INSTALAÇÕES ADICIONAIS (USAR ESTE COMANDO PARA SEGUNDA OU MAIS INSTALAÇÃO:
