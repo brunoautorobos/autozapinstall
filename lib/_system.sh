@@ -311,13 +311,9 @@ system_docker_install() {
   sudo su - root <<EOF
   apt install -y apt-transport-https \
                  ca-certificates curl \
-                 software-properties-common
+                 software-properties-common  
 
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-  
-  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-
-  apt install -y docker-ce
+  snap install docker
 EOF
 
   sleep 2
