@@ -7,6 +7,8 @@ dpkg-reconfigure tzdata
 ```
 
 ### Atualize o sistema e instale os pacotes necessários.
+
+```bash
 sudo apt -y update && apt -y upgrade
 ```
 Instalação com docker / Ubuntu 22
