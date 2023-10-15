@@ -1,0 +1,1 @@
+# autozap6.0install
