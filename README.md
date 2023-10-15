@@ -2,11 +2,11 @@
 
 FAZENDO DOWNLOAD DO INSTALADOR & INICIANDO A PRIMEIRA INSTALAÇÃO (USAR SOMENTE PARA PRIMEIRA INSTALAÇÃO):
 
-```bash
+### Atualizar o Fuso Horário conforme o local da sua instalação
 dpkg-reconfigure tzdata
 ```
 
-```bash
+### Atualize o sistema e instale os pacotes necessários.
 sudo apt -y update && apt -y upgrade
 ```
 
