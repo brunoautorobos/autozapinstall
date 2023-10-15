@@ -10,15 +10,6 @@ dpkg-reconfigure tzdata
 sudo apt -y update && apt -y upgrade
 ```
 
-Instalação com docker / Ubuntu 22
-
-Adcione manualmente o usuário deploy:
-
-useradd -m -p [[senhadeploy]] -s /bin/bash -G sudo deploy
-usermod -aG sudo deploy
-
-cd /home
-
 ```bash
 sudo apt install -y git && git clone https://github.com/wesleybgm01/autozap6.0install.git autozap6.0install && sudo chmod -R 777 autozap6.0install  && cd autozap6.0install  && sudo ./install_primaria
 ```
