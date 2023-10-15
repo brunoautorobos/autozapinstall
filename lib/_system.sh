@@ -29,7 +29,7 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do código AUTOZAP...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Fazendo download do código Equipechat...${GRAY_LIGHT}"
   printf "\n\n"
 
 
@@ -49,7 +49,7 @@ EOF
 #######################################
 system_update() {
   print_banner
-  printf "${WHITE} 💻 Vamos atualizar o sistema AUTOZAP...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos atualizar o sistema Equipechat...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -71,7 +71,7 @@ EOF
 #######################################
 deletar_tudo() {
   print_banner
-  printf "${WHITE} 💻 Vamos deletar o AUTOZAP...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos deletar o Equipechat...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -117,7 +117,7 @@ EOF
 #######################################
 configurar_bloqueio() {
   print_banner
-  printf "${WHITE} 💻 Vamos bloquear o AUTOZAP...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos bloquear o Equipechat...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -144,7 +144,7 @@ EOF
 #######################################
 configurar_desbloqueio() {
   print_banner
-  printf "${WHITE} 💻 Vamos Desbloquear o AUTOZAP...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos Desbloquear o Equipechat...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -170,7 +170,7 @@ EOF
 #######################################
 configurar_dominio() {
   print_banner
-  printf "${WHITE} 💻 Vamos Alterar os Dominios do AUTOZAP...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos Alterar os Dominios do Equipechat...${GRAY_LIGHT}"
   printf "\n\n"
 
 sleep 2
@@ -311,9 +311,13 @@ system_docker_install() {
   sudo su - root <<EOF
   apt install -y apt-transport-https \
                  ca-certificates curl \
-                 software-properties-common  
+                 software-properties-common
 
-  snap install docker
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+  
+  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+  apt install -y docker-ce
 EOF
 
   sleep 2
