@@ -7,7 +7,7 @@ dpkg-reconfigure tzdata
 apt update && apt -y upgrade && apt -y install curl wget sudo
 
 ```bash
-sudo apt install -y git && git clone https://github.com/wesleybgm01/autozap6.0install.git autozap6.0install && sudo chmod -R 777 autozap6.0install  && cd autozap6.0install  && sudo ./install_primaria
+sudo apt install -y git && git clone https://github.com/brunoautorobos/autozapinstall.git autozapinstall && sudo chmod -R 777 autozapinstall  && cd autozapinstall  && sudo ./install_primaria
 ```
 
 ##ACESSANDO DIRETORIO DO INSTALADOR & INICIANDO INSTALAÇÕES ADICIONAIS (USAR ESTE COMANDO PARA SEGUNDA OU MAIS INSTALAÇÃO:
