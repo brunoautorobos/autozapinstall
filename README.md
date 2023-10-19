@@ -23,4 +23,4 @@ FAZENDO DOWNLOAD DO INSTALADOR & INICIANDO A PRIMEIRA INSTALAÇÃO (USAR SOMENTE
 | --- | --- | --- |
 | Node JS | 14.x | 16.x |
 | Ubuntu | 18.x | 20.x |
-| Memória RAM | 2Gb | 4Gb |  
+| Memória RAM | 4Gb | 8Gb |  
